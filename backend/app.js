@@ -14,11 +14,11 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  return res.status(200).send('Welcome to kanban server');
+  return res.status(200).send('server running');
 });
 
 app.get('/api/v1/', (req, res) => {
-  return res.status(200).send('Explore version 1 of kanban server.');
+  return res.status(200).send('version 1 server running .');
 });
 
 app.use('/api/v1/auth', authRouter);
